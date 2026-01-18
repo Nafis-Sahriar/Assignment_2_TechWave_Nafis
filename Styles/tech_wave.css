@@ -9,7 +9,92 @@
   font-optical-sizing: auto;
 }
 
-body
+header
 {
-    background-color: bisque;
+    /* max-width: 1600px; */
+    /* border: 1px solid red; */
+    background-color: #1A0B2E ;
 }
+
+nav
+{
+    /* border: 1px solid blue; */
+    background-color: #1A0B2E ;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
+}
+
+nav .nav_menu
+{
+    /* max-width: 218px; */
+    /* border: 1px solid white; */
+    display: flex;
+    gap: 32px;
+    
+}
+
+.nav_menu a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav_button button
+{
+    display: flex;
+    gap:4px;  
+    /* border: 1px solid white; */
+    padding: 12px 16px; 
+    background:linear-gradient(44deg,#F7E93F 4%,#FB09B4 40%,#9100F8 100%);
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    border: none;
+}
+
+.nav_button button:hover
+{
+    cursor: pointer;
+}
+
+.hamburg
+{
+    display: none;
+}
+
+
+/* Responsive Section  */
+@media screen and (max-width:576px)
+{
+
+    .nav_menu a
+    {
+        display: none;
+    }
+
+    .nav_button
+    {
+        display: none;
+    }
+
+    .hamburg
+    {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .nav_logo img{
+        max-width:137px ;
+        max-height: 20px;
+        margin-left: 20px;
+    }
+
+}
+
