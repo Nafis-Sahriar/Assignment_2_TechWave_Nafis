@@ -8,6 +8,9 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+html{
+    font-size: 16px;
+}
 
 header
 {
@@ -156,10 +159,11 @@ nav .nav_menu
 .spotify
 {
     display: flex;
+    gap: 8px;
     background:linear-gradient(20deg,#F7E93F 20%,#FB09B4 40%,#9100F8 100%);
     border-radius: 25px;
     color: white;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border: none;
     padding: 12px 20px;
     font-weight: 600;
@@ -172,7 +176,7 @@ nav .nav_menu
     gap: 8px;
     background-color: #1A0B2E;
     color: #00FF88;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     border: 1px solid #00FF88;
     padding: 12px 20px;
@@ -188,6 +192,90 @@ nav .nav_menu
 {
     cursor: pointer;
 }
+
+/* About Section  */
+
+.about
+{
+    background-color: #1A0B2E ;
+}
+
+.about_container
+{
+    max-width:1200px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+    padding-top: 50px;
+    /* border: 1px solid white; */
+
+}
+
+.about_text
+{
+    text-align: center;
+}
+
+.about_text h1
+{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+
+}
+
+.about_text p{
+    font-size: 1rem;
+    line-height: 20px;
+    margin-top:16px ;
+    color: #ffffffb2;
+    box-shadow: 0 4px 4px #00000033;
+}
+
+.about_line hr
+{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.about_numbers_container
+{
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr); */
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.number_cards
+{
+    text-align: center;
+}
+
+.number_cards h1
+{
+    color: #00FF88;
+    font-size: 3rem;
+    padding-bottom:1rem ;
+}
+
+.number_cards p
+{
+    font-size: 1rem ;
+    line-height: 20px;
+    color: #ffffffe1;
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -275,7 +363,22 @@ nav .nav_menu
 }
 
 
+.about_numbers_container
+{
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr); */
 
+    flex-wrap: wrap;
+    gap: 40px;
+    
+}
+
+.about_container
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
 
 }
 
