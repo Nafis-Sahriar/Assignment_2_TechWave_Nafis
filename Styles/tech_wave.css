@@ -470,11 +470,73 @@ nav .nav_menu
  
 }
 
-
 .playicon :hover
 {
     cursor: pointer;
 }
+
+/* Host_section */
+
+.meet
+{
+    background-color: #1A0B2E;
+}
+
+.meet_container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+
+.meet_header h1
+{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.guest_container
+{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background-color:#533c7260;
+    padding: 40px;
+    border-radius:40px ;
+}
+.guest_intro h2
+{
+    font-size: 2rem;
+    padding-bottom: 16px;
+}
+
+.guest_intro p
+{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    line-height: 24px;
+    color: #ffffff98;
+}
+
+.guest_contact
+{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    max-width: 184px ;
+    max-height: 40px;
+    margin-top: 16px;
+}
+.guest_contact img
+{
+    border: 1px solid #533C72;
+    border-radius: 50%;
+    padding: 20px;
+    
+}
+
+
 
 
 
@@ -641,9 +703,27 @@ nav .nav_menu
     font-size: 2rem;
 }
 
+.guest_container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.guest_contact
+{
+    padding-left: 30px;
+}
+
+.meet_header h1{
+    font-size: 2rem;
+}
+
+.guest_intro h2
+{
+    font-size: 1.5rem;
+}
+
     
-
-
-
 }
 
