@@ -263,9 +263,30 @@ nav .nav_menu
     font-size: 1rem ;
     line-height: 20px;
     color: #ffffffe1;
-
-
 }
+
+.feature
+{
+    background-color: #230E3D;
+}
+
+.feature_container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid white;
+    /* background-color: #35116588; */
+}
+
+.feature_header h1
+{
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 120px;
+}
+
+
+
 
 
 
@@ -376,10 +397,30 @@ nav .nav_menu
 
 .about_container
 {
+    margin-top: 0;
+    padding-top: 0;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 40px;
 }
+
+.about_text h1
+{
+    font-size: 2rem;
+}
+
+.about_text p{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.about_text
+{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
 
 }
 
