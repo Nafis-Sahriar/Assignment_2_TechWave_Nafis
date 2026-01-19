@@ -274,7 +274,8 @@ nav .nav_menu
 {
     max-width: 1200px;
     margin: 0 auto;
-    border: 1px solid white;
+    padding-bottom: 120px;
+    /* border: 1px solid white; */
     /* background-color: #35116588; */
 }
 
@@ -285,25 +286,77 @@ nav .nav_menu
   padding-top: 120px;
 }
 
+.feature_cards
+{
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
 
+.feature_card_container
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px ;
+    padding-top: 40px;
+}
 
+.card_1
+{
+    grid-row: 1 / span 2;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
 
+.card_2
+{
+    grid-column: 2 / span 2;
+    /* border: 1px solid white; */
+       display: flex;
+    align-items: center;
+    padding: 40px;
+}
 
+.card_3
+{
+    grid-column: 2 / span 2;
+    /* border: 1px solid white; */
+       display: flex;
+    align-items: center;
+    padding: 40px;
+}
 
+.card_4
+{
+    grid-column: 1 / span 2;
+    /* border: 1px solid white; */
+     display: flex;
+    align-items: center;
+    padding: 40px;
 
+}
 
+.card_5
+{
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
 
+.card_content h3
+{
+    font-size: 1.5rem;
+    padding: 16px 0;   
+}
 
-
-
-
-
-
-
-
-
-
-
+.card_content p
+{
+    font-size: 1rem;
+    color: #ffffffa4;
+}
 
 
 
@@ -390,8 +443,7 @@ nav .nav_menu
     grid-template-columns: repeat(2,1fr);
     gap: 40px; 
 
-    /* flex-wrap: wrap;
-    gap: 40px; */
+
     
 }
 
@@ -419,6 +471,39 @@ nav .nav_menu
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
+.feature_container 
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+.feature_header h1 
+{
+    font-size: 2rem;
+    padding-top: 60px;
+        
+}
+
+.feature_card_container 
+{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+    padding: 20px;
+}
+
+.card_1,.card_2,.card_3,.card_4,.card_5 
+{
+        grid-column: auto;
+        grid-row: auto;
+        padding: 24px;
+        flex-direction: column;
+        text-align: left;
+}
+
+    
 
 
 
