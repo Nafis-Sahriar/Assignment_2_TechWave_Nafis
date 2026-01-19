@@ -115,8 +115,39 @@ nav .nav_menu
     
 }
 
-.mic button
+@keyframes blink
 {
+    0% 
+    {
+        box-shadow: 0 3px 27px 0 #00FF88;
+    }
+    25%
+    {
+        box-shadow: 0 6px 50px rgb(240, 236, 3);
+    }
+    50% 
+    {
+        box-shadow: 0 6px 50px rgb(150, 2, 2);
+    }
+    100% 
+     {
+        box-shadow: 0 3px 50px 0 #00FF88;
+     }
+}
+
+@keyframes blink_green
+{
+    0% 
+    {
+        box-shadow: 0 3px 27px 0 #00FF88;
+    }
+    100% 
+     {
+        box-shadow: 0 3px 50px 0 #000000;
+     }
+}
+
+.mic button {
     background-color: #00FF88;
     font-size: 1.125rem;
     color: black;
@@ -125,12 +156,13 @@ nav .nav_menu
     border: none;
     font-weight: 600;
     box-shadow: 0 3px 27px 0 #00FF88;
-    transition: transform 0s ease-in-out, box-shadow 0s ease-in-out;
-
-    position:absolute;
-    top:-325px;
-    right:-170px
+    position: absolute;
+    top: -325px;
+    right: -170px;
+    animation: blink 1s infinite ease-in-out;
 }
+
+
 
 .hero_text
 {
@@ -256,6 +288,8 @@ nav .nav_menu
 .number_cards
 {
     text-align: center;
+    animation: blink_green 2s 10 ease-in-out;
+    border-radius: 20px;
 }
 
 .number_cards h1
@@ -263,6 +297,7 @@ nav .nav_menu
     color: #00FF88;
     font-size: 3rem;
     padding-bottom:1rem ;
+    
 }
 
 .number_cards p
@@ -297,6 +332,7 @@ nav .nav_menu
 {
     background-color: rgba(53, 17, 101, 0.4);
     border-radius: 40px;
+    
 }
 
 .feature_card_container
@@ -357,6 +393,7 @@ nav .nav_menu
 {
     font-size: 1.5rem;
     padding: 16px 0;   
+    
 }
 
 .card_content p
@@ -606,6 +643,7 @@ footer
 {
     transform: translateY(-1px);
     box-shadow: 0 6px 50px green;
+    animation: blink 1s infinite ease-in-out;
 }
 
 .new:hover
@@ -613,6 +651,7 @@ footer
     transform: translateX(3px);
     transform: translateY(-3px);
     box-shadow: 0 6px 50px rgb(16, 243, 16);
+
 }
 
 
@@ -879,6 +918,11 @@ footer
 {
         grid-column: auto;
         grid-row: auto;
+}
+
+.card_5
+{
+    grid-column: 1 / span 2;
 }
 
 .video_card_container 
