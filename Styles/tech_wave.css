@@ -239,11 +239,11 @@ nav .nav_menu
 
 .about_numbers_container
 {
-    /* display: grid;
-    grid-template-columns: repeat(4,1fr); */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 .number_cards
@@ -365,11 +365,12 @@ nav .nav_menu
 
 .about_numbers_container
 {
-    /* display: grid;
-    grid-template-columns: repeat(4,1fr); */
+   
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px; 
 
-    flex-wrap: wrap;
-    gap: 40px;
+    /* flex-wrap: wrap;
+    gap: 40px; */
     
 }
 
