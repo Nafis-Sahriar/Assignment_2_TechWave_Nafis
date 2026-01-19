@@ -60,6 +60,7 @@ nav .nav_menu
     color: white;
     font-size: 1rem;
     border: none;
+    transition: transform 0s ease-in-out, box-shadow 0s ease-in-out;
 }
 
 .nav_button button:hover
@@ -124,6 +125,7 @@ nav .nav_menu
     border: none;
     font-weight: 600;
     box-shadow: 0 3px 27px 0 #00FF88;
+    transition: transform 0s ease-in-out, box-shadow 0s ease-in-out;
 
     position:absolute;
     top:-325px;
@@ -169,6 +171,7 @@ nav .nav_menu
     border: none;
     padding: 12px 20px;
     font-weight: 600;
+    transition: transform 0s ease-in-out, box-shadow 0s ease-in-out;
     
 }
 
@@ -183,6 +186,7 @@ nav .nav_menu
     border: 1px solid #00FF88;
     padding: 12px 20px;
     border-radius: 25px;
+    transition: transform 0s ease-in-out, box-shadow 0s ease-in-out;
     
 }
 
@@ -539,6 +543,82 @@ nav .nav_menu
     
 }
 
+footer
+{
+    background-color: #1A0B2E;
+    background-image: url(../Styles/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.f_container
+{
+    max-width: 1360px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.f_icons{
+    display: flex;
+    gap: 40px;
+}
+
+.spoti, .apple, .yt, .twit
+{
+    display: flex;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.603);
+}
+
+.f_logo img
+{
+    width: 410px;
+    height: 60px;
+}
+
+.copyright
+{
+    color: #fafafa80;
+    font-size: 1rem;
+}
+
+
+.nav_button button:hover 
+{
+    transform: translateY(-1px);
+    box-shadow: 0 6px 50px yellow;
+}
+
+.spotify:hover
+{
+   transform: translateY(-1px);
+    box-shadow: 0 6px 50px rgb(140, 0, 255);
+}
+
+.subs:hover
+{
+    transform: translateY(-1px);
+    box-shadow: 0 6px 50px green;
+}
+
+.new:hover
+{
+    transform: translateX(3px);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 50px rgb(16, 243, 16);
+}
+
+
+
+
+
 
 
 
@@ -727,6 +807,88 @@ nav .nav_menu
     font-size: 1.5rem;
 }
 
-    
+footer
+{
+    background-color: #1A0B2E;
+    background-image: url(../Styles/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
+
+.f_container
+{
+    max-width: 400px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.f_icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 255px;
+    justify-content: center;
+}
+
+.spoti, .apple, .yt, .twit
+{
+    display: flex;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.603);
+}
+
+
+
+.f_logo img
+{
+    width: 219px;
+    height: 32px;
+}
+
+.copyright
+{
+    color: #fafafa80;
+    font-size: 1rem;
+}
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) 
+{
+
+.about_numbers_container 
+{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.feature_card_container 
+{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    margin: auto;
+}
+
+.card_1,.card_2, .card_3, .card_4,.card_5 
+{
+        grid-column: auto;
+        grid-row: auto;
+}
+
+.video_card_container 
+{
+    flex-wrap: wrap;
+    gap: 24px;
+}
+}
+
+
+
+
 
